@@ -9,6 +9,8 @@ class UsersLeaderboard extends Model
 {
     use HasFactory;
 
+    protected $table = 'users_leaderboard';
+
     protected $fillable = ['user_id', 'total_points', 'rank'];
 
     public function user()
